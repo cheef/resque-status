@@ -53,21 +53,18 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<uuid>, [">= 2.0.2"])
-      s.add_runtime_dependency(%q<resque>, [">= 1.3.1"])
-      s.add_runtime_dependency(%q<redisk>, [">= 0.2.1"])
+      s.add_runtime_dependency(%q<resque-mongo>, [">= 1.9.8.1"])
       s.add_development_dependency(%q<shoulda>, [">= 2.10.2"])
       s.add_development_dependency(%q<mocha>, [">= 0.9.8"])
     else
       s.add_dependency(%q<uuid>, [">= 2.0.2"])
-      s.add_dependency(%q<resque>, [">= 1.3.1"])
-      s.add_dependency(%q<redisk>, [">= 0.2.1"])
+      s.add_dependency(%q<resque-mongo>, [">= 1.9.8.1"])
       s.add_dependency(%q<shoulda>, [">= 2.10.2"])
       s.add_dependency(%q<mocha>, [">= 0.9.8"])
     end
   else
     s.add_dependency(%q<uuid>, [">= 2.0.2"])
-    s.add_dependency(%q<resque>, [">= 1.3.1"])
-    s.add_dependency(%q<redisk>, [">= 0.2.1"])
+    s.add_dependency(%q<resque-mongo>, [">= 1.9.8.1"])
     s.add_dependency(%q<shoulda>, [">= 2.10.2"])
     s.add_dependency(%q<mocha>, [">= 0.9.8"])
   end

@@ -1,5 +1,4 @@
 require 'resque'
-require 'redisk'
 require 'uuid'
 
 module Resque
